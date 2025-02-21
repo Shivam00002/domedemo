@@ -6,6 +6,7 @@ export const fetchHomesByUser = createAsyncThunk('homes/fetchByUser', async (use
     return response.data;
 });
 
+
 export const fetchUsersByHome = createAsyncThunk('homes/fetchUsersByHome', async (homeId) => {
     const response = await axios.get(`/api/user/find-by-home?homeId=${homeId}`);
     return response.data;

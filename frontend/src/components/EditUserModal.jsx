@@ -12,7 +12,8 @@ function EditUserModal({ home, onClose }) {
     dispatch(fetchUsersByHome(home.id))
       .unwrap()
       .then((homeUsers) => {
-        setSelectedUsers(homeUsers.map((user) => user.id));
+       
+ setSelectedUsers(homeUsers.map((user) => user.id));
         setIsLoading(false);
       });
   }, [dispatch, home.id]);

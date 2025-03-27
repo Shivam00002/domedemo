@@ -17,6 +17,7 @@ function HomeList({ userId, onEditUser }) {
     return <div>Loading homes...</div>;
   }
 
+
   if (status === "failed") {
     return <div>Error loading homes. Please try again.</div>;
   }
